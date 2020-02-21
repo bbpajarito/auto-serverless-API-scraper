@@ -34,7 +34,15 @@ To deploy the Lambda function in the AWS cloud:
 
 	The template also has an event rule (`AWS::Events::Rule`) which executes the Lambda function every 7 days. This event rule needs permission to invoke the Lambda function (`AWS::Lambda::Permission`) which was also written in the CloudFormation template. 
 	
-* [Create the CloudFormation stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html). I used script files (`create.sh`, `update.sh`) in creating and updating the stack in the bash terminal.  
+* [Create the CloudFormation stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html). I used script files (`create.sh`, `update.sh`) in creating and updating the stack in the bash terminal.  Check S3, CloudFormation, and CloudWatch management consoles in your AWS account to confirm the successful deployment of the Lambda function. You can also [invoke the function manually using AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/lambda/invoke.html). For a sample data set, see `2020-02-20 06_13_45.160412.csv`. 
+
+## Main References
+
+[How to get Aussie property price guides using Python & the Domain API](https://medium.com/@alexdambra/how-to-get-aussie-property-price-guides-using-python-the-domain-api-afe871efac96)
+
+[Make Data Acquisition Easy with AWS & Lambda (Python) in 12 Steps](https://towardsdatascience.com/make-data-acquisition-easy-with-aws-lambda-python-in-12-steps-33fe201d1bb4)
+
+[Create and deploy an AWS Lambda function with AWS CloudFormation](https://medium.com/@garry.passarella/create-and-deploy-an-aws-lambda-function-with-aws-cloudformation-583d5a2b1df0)
 
 
 
